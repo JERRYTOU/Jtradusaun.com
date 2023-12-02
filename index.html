@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- Coding By Jtnewtrong-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Jt'Tradusaun</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headers.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .buttonload {
+        background-color: #04AA6D; /* Green background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 12px 24px; /* Some padding */
+        font-size: 16px; /* Set a font-size */
+      }
+      
+      /* Add a right margin to each icon */
+      .fa {
+        margin-left: -12px;
+        margin-right: 8px;
+      }
+
+
+      .button {
+        position: relative;
+        background-color: #04AA6D;
+        border: none;
+        font-size: 19px;
+        color: #FFFFFF;
+        padding: 20px;
+        
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        
+        border-radius: 15px;
+      }
+
+      .button:after {
+        content: "";
+        background: #90EE90;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+
+      .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+
+      </style>
+
+
+
+
+
+
+
+  </head>
+
+  <body class="w3-light-grey">
+
+    <div class="header">
+      <a href="#default" class="logo">Tradusaun-Global</a>
+      <div class="header-right">
+        <a class="active" href="index.html">Home</a>
+        <a href="">Contact</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+
+    <br>
+
+  <main >
+    <div class="w3-center">
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+          <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+        </div>
+        
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+
+            <select>
+            </select>
+
+          </li>
+          <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+      <br>
+     
+
+      <button class="button">
+        Translate
+      </button>
+      <br>
+      
+      
+      
+    </div>
+  </main>
+
+
+  
+  </div>
+  
+  
+    
+ 
+   
+  <div class="w3-container w3-teal w3-center w3-margin-top">
+    <p>Find me on social media.</p>
+    <i href="https://www.facebook.com/jerry.tou1"   
+    class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i href="https://www.instagram.com/jtnewtrong/" 
+    class="fa fa-instagram w3-hover-opacity"></i>
+    <i href="#"                                     
+    class="fa fa-snapchat w3-hover-opacity"></i>
+    <i href="https://nl.pinterest.com/jerry1tou/"   
+    class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i href="https://twitter.com/AshyTou"           
+    class="fa fa-twitter w3-hover-opacity"></i>
+    <i href="https://www.linkedin.com/in/jerry-tou-3b6206212/"   
+    class="fa fa-linkedin w3-hover-opacity"></i>
+    <p>Powered by <a href="https://jtnewtrong.blogspot.com" 
+      target="_blank">JT'S ICT-LIBRARIU</a>
+    </p>
+  </div>
+  
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+    
+
+    <script> 
+         document.addEventListener('contextmenu', event=> event.preventDefault()); 
+         document.onkeydown = function(e) { 
+         if(event.keyCode == 123) { 
+         return false; 
+         } 
+         if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+         return false; 
+         } 
+         if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+         return false; 
+         } 
+         if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+         return false; 
+         } 
+         } 
+         </script> 
+  </body>
+
+ 
+  
+</html>

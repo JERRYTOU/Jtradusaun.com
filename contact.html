@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <!-- Coding By Jtnewtrong-->
   <title>Jt'Tradusaun</title>
 <head>
   <link rel="stylesheet" href="css/headers.css">
@@ -85,26 +86,26 @@ input[type=submit]:hover {
 <div class="container">
   <div style="text-align:center">
     <h2>Contact Us</h2>
-    <p>Swing by for a cup of coffee, or leave us a message:</p>
+    <p>Jtnewtrong Tradusaun-Global</p>
   </div>
   <div class="row">
     <div class="column">
-      <img src="/w3images/map.jpg" style="width:100%">
+      <img src="images/jtlogo.png" style="width:100%">
     </div>
     <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
+      <form action="process_form.php">
+
+        <label for="fname">Complete Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+        
+        <label for="lname">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your Email.." required>
+        
+        
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:170px"  required>
+        
+        </textarea>
         <input type="submit" value="Submit">
       </form>
     </div>

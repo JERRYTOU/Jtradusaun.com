@@ -96,5 +96,5 @@ const countries = {
     "xh-ZA": "Xhosa",
     "yi-YD": "Yiddish",
     "zu-ZA": "Zulu",
-    "cn-CN": "Chinese (Mandaring)"
+    "zh-CN": "Chinese(Mandaring)"
 }
